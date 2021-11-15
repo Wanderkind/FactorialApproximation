@@ -4,14 +4,14 @@ import math
 
 L = [[], [], [], [], [], [], [], [], [], []]
 for s in range(170):
+    
     n = s + 1
     
     for a in range(6):
         
-        exp = a + 1
-        
         for i in range(100):
-            k = i*(10**(-exp))
+            
+            k = i*(10**(-a - 1))
             f = math.factorial(n)
             
             aprx = math.sqrt((2*n + 1/3 + k)*math.pi)*((n/math.e)**n)
